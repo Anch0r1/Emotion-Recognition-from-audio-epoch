@@ -60,7 +60,7 @@ def train_prosody(model, train_loader, val_loader, criterion, optimizer, num_epo
             print(f"Val Loss: {avg_val_loss:.4f}  Accuracy: {accuracy:.2f}%")
 
     torch.save(model.state_dict(), "prosody_model.pth")
-    print("✅ Model saved as prosody_model.pth")
+    print(" Model saved as prosody_model.pth")
 
 
 # Main entry
