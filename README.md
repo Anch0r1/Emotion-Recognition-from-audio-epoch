@@ -1,7 +1,7 @@
 
 # Emotion Recognition from Audio
 
-This project aims to train a deep learning model to classify human emotions from .wav audio files. It leverages both audio and prosody features to improve emotion recognition accuracy.
+This project aims to train a deep learning model to classify human emotions from .wav audio files. It uses both audio and prosody features to improve emotion recognition accuracy.
 
 ## Key Functionalities
 
@@ -9,6 +9,10 @@ This project aims to train a deep learning model to classify human emotions from
 * **Model Training:** Training of separate models for audio and prosody features, as well as a fusion model.
 * **Fusion of Modalities:** Combining audio and prosody features to enhance emotion recognition.
 * **Evaluation:** Evaluating the performance of the trained models.
+
+## Dataset
+The dataset used is the [RAVDESS Emotional Speech Audio (Kaggle)](https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio?resource=download)
+
 
 ## Repository Structure
 
@@ -37,3 +41,5 @@ To run this project, you'll need to install the following Python libraries. You 
 
 ```bash
 pip install -r requirements.txt
+
+
