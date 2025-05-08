@@ -2,10 +2,10 @@ import os
 import torch
 from torch.utils.data import DataLoader
 from sklearn.model_selection import train_test_split
-from emotion_dataset import EmotionAudioDataset  # Assuming your class is in this file
+from emotion_dataset import EmotionAudioDataset 
 
-# Define your dataset directory
-data_dir = "data/archive"  # Make sure this is the correct path to your RAVDESS audio files
+
+data_dir = "data/archive"  
 
 # Instantiate the full dataset
 full_dataset = EmotionAudioDataset(data_dir)
