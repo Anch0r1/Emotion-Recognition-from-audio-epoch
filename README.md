@@ -12,6 +12,7 @@ This project aims to train a deep learning model to classify human emotions from
 
 ## Dataset
 The dataset used is the [RAVDESS Emotional Speech Audio (Kaggle)](https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio?resource=download)
+> Note: Dataset files are expected to be placed under `data/archive/`.
 
 
 ## Repository Structure
