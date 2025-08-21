@@ -38,7 +38,9 @@ The repository contains the following main files and directories:
 
 ## Results
 <img width="668" height="218" alt="image" src="https://github.com/user-attachments/assets/e8a30b31-fb59-485a-af26-1e9cb90c2335" />
-[Click here to view the PDF report](Project_Report.pdf)
+
+[Click here to view Project report](Project_Report.pdf)
+
 ### Fusion Model confusion matrix
 <img width="940" height="728" alt="2785086a667d5ace8afb67018263c7c196751b3a" src="https://github.com/user-attachments/assets/13faf039-f68d-4c3b-9bef-0a75dc4ed085" />
 
