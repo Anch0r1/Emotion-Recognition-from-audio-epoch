@@ -32,22 +32,3 @@ train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True, nu
 val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False, num_workers=num_workers)
 test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False, num_workers=num_workers)
 
-# --- Optional: Test the dataloaders ---
-if __name__ == '__main__':
-    print("Training DataLoader:")
-    for spectrograms, labels in train_loader:
-        print("Batch shape:", spectrograms.shape)  # [B, 1, 128, 216]
-        print("Labels:", labels)
-        break
-
-    print("\nValidation DataLoader:")
-    for spectrograms, labels in val_loader:
-        print("Batch shape:", spectrograms.shape)
-        print("Labels:", labels)
-        break
-
-    print("\nTesting DataLoader:")
-    for spectrograms, labels in test_loader:
-        print("Batch shape:", spectrograms.shape)
-        print("Labels:", labels)
-        break
