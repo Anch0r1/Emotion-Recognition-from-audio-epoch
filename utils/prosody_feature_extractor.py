@@ -16,21 +16,21 @@ class ProsodyFeatureExtractor(nn.Module):
         else:
             raise ValueError(f"Feature layer '{self.feature_layer_name}' not found in the ProsodyModel.")
 
-if __name__ == '__main__':
-    # Example usage:
-    prosody_input_size = 179 # Adjust based on your prosody feature vector length
-    prosody_hidden_size = 128
-    num_emotions = 8
-    trained_prosody_model = ProsodyModel(prosody_input_size, prosody_hidden_size, num_emotions)
-    trained_prosody_model.load_state_dict(torch.load("prosody_model.pth", map_location='cpu')) # Load your trained prosody model weights
-    trained_prosody_model.eval()
+# if __name__ == '__main__':
+#     # Example usage:
+#     prosody_input_size = 179 # Adjust based on your prosody feature vector length
+#     prosody_hidden_size = 128
+#     num_emotions = 8
+#     trained_prosody_model = ProsodyModel(prosody_input_size, prosody_hidden_size, num_emotions)
+#     trained_prosody_model.load_state_dict(torch.load("prosody_model.pth", map_location='cpu')) # Load your trained prosody model weights
+#     trained_prosody_model.eval()
 
-    feature_extractor = ProsodyFeatureExtractor(trained_prosody_model, feature_layer='fc1')
-    print("\nProsody Feature Extractor:")
-    for name, module in feature_extractor.named_modules():
-        print(f"  {name}: {module}")
+#     feature_extractor = ProsodyFeatureExtractor(trained_prosody_model, feature_layer='fc1')
+#     print("\nProsody Feature Extractor:")
+#     for name, module in feature_extractor.named_modules():
+#         print(f"  {name}: {module}")
 
-    # Example input (adjust shape as needed)
-    dummy_input_prosody = torch.randn(1, prosody_input_size)
-    prosody_features = feature_extractor(dummy_input_prosody)
-    print("Shape of Prosody features:", prosody_features.shape)
+#     # Example input (adjust shape as needed)
+#     dummy_input_prosody = torch.randn(1, prosody_input_size)
+#     prosody_features = feature_extractor(dummy_input_prosody)
+#     print("Shape of Prosody features:", prosody_features.shape)
