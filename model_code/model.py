@@ -54,9 +54,3 @@ class AudioCNN(nn.Module):
 # Instantiate the model
 num_emotions = 8  # Based on your emotion map
 model = AudioCNN(num_emotions)
-
-# --- Optional: Test the model with a dummy input ---
-if __name__ == '__main__':
-    dummy_input = torch.randn(4, 1, 128, 216) # Batch size 4, 1 channel, 128 mel bands, 216 time frames
-    output = model(dummy_input)
-    print("Model output shape:", output.shape) # Should be [4, 8] for 8 emotions
