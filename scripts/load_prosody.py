@@ -29,17 +29,17 @@ def create_prosody_dataloader(data_dir, batch_size=4, validation_split=0.2):
 
     return train_loader, val_loader
 
-# Example usage
-if __name__ == "__main__":
-    data_dir = "data/archive"  # Path to your dataset
-    batch_size = 4
+# # Example usage
+# if __name__ == "__main__":
+#     data_dir = "data/archive"  # Path to your dataset
+#     batch_size = 4
 
-    # Create the dataloaders
-    train_loader, val_loader = create_prosody_dataloader(data_dir, batch_size=batch_size)
+#     # Create the dataloaders
+#     train_loader, val_loader = create_prosody_dataloader(data_dir, batch_size=batch_size)
 
-    # To check the data loading and output the shapes of the batches
-    for prosody_batch, numerical_label_batch, string_label_batch in train_loader:
-        print(f"Prosody batch shape: {prosody_batch.shape}")
-        print(f"Numerical label batch: {numerical_label_batch}")
-        print(f"String label batch: {string_label_batch}")
-        break  # Only print one batch for demonstration
+#     # To check the data loading and output the shapes of the batches
+#     for prosody_batch, numerical_label_batch, string_label_batch in train_loader:
+#         print(f"Prosody batch shape: {prosody_batch.shape}")
+#         print(f"Numerical label batch: {numerical_label_batch}")
+#         print(f"String label batch: {string_label_batch}")
+#         break  # Only print one batch for demonstration
